@@ -1,0 +1,50 @@
+{
+  "name": "raccoon",
+  "author": {
+    "name": "Shailesh Shekhawat"
+  },
+  "description": "A Collaborative Filtering Recommendation Engine for Node.js utilizing Redis",
+  "version": "0.1.9",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shailesh9/Smart-phone-recommendation.git"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "redis": "~0.8.4",
+    "underscore": "~1.5.1"
+  },
+  "devDependencies": {
+    "coveralls": "2.1.x",
+    "travis-cov": "0.2.x",
+    "blanket": "1.1.5",
+    "mocha-lcov-reporter": "0.0.1",
+    "grunt": "0.4.1",
+    "grunt-cli": "0.1.7",
+    "chai": "*",
+    "mocha": "*",
+    "grunt-mocha-test": "0.6.2",
+    "grunt-contrib-jshint": "0.6.2",
+    "grunt-contrib-watch": "0.5.1",
+    "grunt-mocha-cov": "0.0.4",
+    "sinon-chai": "2.4.0",
+    "sinon": "1.7.3",
+    "grunt-blanket-mocha": "0.2.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": "*"
+  }
+  "keywords": [
+    "recommend",
+    "recommended",
+    "recommendation",
+    "engine",
+    "collaborative",
+    "filtering",
+    "middleware"
+  ]
+}
