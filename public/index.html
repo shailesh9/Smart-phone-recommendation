@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="javascripts/angularApp.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+
+</head>
+
+<body ng-app="mobileReco" ng-controller="MainCtrl">
+
+<div class="modal-body">
+    <div style="float: left">
+        <div class="first-column" >
+            <form ng-submit="getName()">
+                <label>Name: </label><input type="text" placeholder="Enter Name" ng-model="name">
+            </form>
+            <div ng-view></div>
+
+
+        </div>
+
+        <div class="first-column" ng-repeat="item in phones track by $index">
+            <ul>
+                <li>{{item.name}}
+                    <button type="submit" ng-click="likeSubmit(1, myObj, item._id)">Buy</button>
+                    <button type="submit" ng-click="likeSubmit(-1, myObj, item._id)">Dislike</button>
+                </li>
+            </ul>
+        </div>
+        <div ng-show="myVar">
+            <footer id="footer">
+                <h3>Most similar users who Bought same phone:</h3>
+                <div ng-repeat="item in replyObj2 track by $index">
+                    <li>{{item.name}}</li>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+    <div class="new_append" style="float: right">
+        <h3 ng-show="myVar">Most similar Phones:</h3>
+        <div class="second-column" ng-repeat="rec in replyObj track by $index">
+            <ul>
+                <li>
+                    {{rec.name}}
+                </li>
+            </ul>
+        </div>
+        <div class="second-column" ng-repeat="rec in replyObj1 track by $index">
+            <ul>
+                <li>
+                    {{rec.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="append" style="float: right;">-->
+        <!--<h3 ng-show="myVar">Featured phones</h3>-->
+        <!--<div class="second-column" ng-repeat="score in replyObj3 track by $index">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--{{score.}}-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+
+
+
+
+</body>
+</html>

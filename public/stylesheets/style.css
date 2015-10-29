@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.first-column {
+    width: 40%;
+    float: left;
+}
+
+.second-column {
+    width: 40%;
+    float: right;
+}
+.procedure-details {
+    max-height: 100px;
+    transition: .8s;
+    overflow: hidden;
+}
+
+#footer{
+    background-color: lime;
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
