@@ -26,55 +26,6 @@ app.post('/newRating', function(req, res){
     starter.buildRecommendationObject(req.body.loginObj.userId, req.body.phoneId, req.body.status, function (obj) {
         res.send(obj)
     })
-    //console.log('===============new Rating==================')
-    //var replyObj = {};
-    //var loginObj = req.body.loginObj.allPhones
-    //var newRecs = []
-    //if (req.body.status === 'Liked'){
-    //    raccoon.input.liked(req.body.loginObj.userId, req.body.phoneId, function(){
-    //        raccoon.stat.recommendFor(req.body.loginObj.userId, 15, function(recs){
-    //            console.log('recs liked', recs);
-    //            raccoon.stat.mostSimilarUsers(req.body.loginObj.userId, function(simUsers){
-    //                raccoon.stat.bestRatedWithScores(9, function(bestRated){
-    //                    for(var i in loginObj){
-    //                        if(loginObj.hasOwnProperty(i)){
-    //                            for(var j=0;j<recs.length;j++){
-    //                                if(loginObj[i]._id == recs[j]){
-    //                                    newRecs.push(loginObj[i].name)
-    //                                }
-    //                            }
-    //
-    //                        }
-    //                    }
-    //                    replyObj = {
-    //                        recommendations: newRecs,
-    //                        similarUsers: simUsers,
-    //                        bestScores: bestRated
-    //                    };
-    //                    console.log('replyObj', replyObj);
-    //                    res.send(replyObj);
-    //                });
-    //            });
-    //        });
-    //    });
-    //} else {
-    //    raccoon.input.disliked(req.body.loginObj.userId, req.body.phoneId, function(){
-    //        raccoon.stat.recommendFor(req.body.loginObj.userId, 15, function(recs){
-    //            console.log('recs disliked', recs);
-    //            raccoon.stat.mostSimilarUsers(req.body.loginObj.userId, function(simUsers){
-    //                raccoon.stat.bestRatedWithScores(9, function(bestRated){
-    //                    replyObj = {
-    //                        recommendations: recs,
-    //                        similarUsers: simUsers,
-    //                        bestScores: bestRated
-    //                    };
-    //                    console.log('replyObj', replyObj);
-    //                    res.send(replyObj);
-    //                });
-    //            });
-    //        });
-    //    });
-    //}
 });
 app.post('/phoneLikes', function(req, res){
     console.log('========inside movieLikes=====================================')
