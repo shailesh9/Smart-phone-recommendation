@@ -2,7 +2,7 @@
 Smart phone recommendation using raccoon
 
 
-# recommendationRaccoon engine built on top of Node.js. It is a full installation of the module that takes advantage of lightning fast recommendations and simple user interface. It comes complete with sample content and tests.
+recommendationRaccoon engine built on top of Node.js. It is a full installation of the module that takes advantage of lightning fast recommendations and simple user interface. It comes complete with sample content and tests.
 
 ## Dependencies
 
