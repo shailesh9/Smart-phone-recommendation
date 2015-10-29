@@ -20,7 +20,7 @@ recommendationRaccoon engine built on top of Node.js. It is a full installation 
 
 #### Clone the repo
 ``` bash
-git clone https://github.com/guymorita/Mosaic-Films---Recommendation-Engine-Demo.git
+git clone https://github.com/shailesh9/Smart-phone-recommendation.git
 ```
 
 #### Navigate to the folder
