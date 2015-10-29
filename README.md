@@ -50,8 +50,8 @@ redis-server
 node node-server.js
 ```
 
-#### Import Movies
-* First Go to http://localhost:3000/importMovies
+#### Import Phones
+* First Go to http://localhost:3000/importPhones
 * If you're on a different local host, change it out
 
 #### It's ready! Try the home page
